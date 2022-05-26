@@ -1,13 +1,10 @@
 //Counter.tsx
 import React, { useState } from "react";
 import { RootState } from "../store/store";
+// useTypedSelector라는 custom hooks를 사용할 것이기에 rootState를 import할 필요가 없다!
 import { useDispatch } from "react-redux";
 // useTypedSelector라는 custom hooks를 사용할 것이기에 useSelector를 import할 필요가 없다!
-import {
-  increment,
-  decrement,
-  incrementByAmount,
-} from "../features/counter/counterSlice";
+import { increment, decrement } from "../features/counter/counterSlice";
 import { sagaActions } from "../sagas/sagaActions";
 import { useTypedSelector } from "../hooks/useTypedSelector";
 

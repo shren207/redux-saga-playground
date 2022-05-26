@@ -1,5 +1,6 @@
 // Redux toolkit 사용을 위해 createSlice를 import한다
 
+// counterSlice.ts
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 export interface CounterState {

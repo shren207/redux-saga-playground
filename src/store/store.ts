@@ -12,7 +12,6 @@ export const store = configureStore({
   reducer: {
     counter: counterReducer,
   },
-  // devTools: process.env.NODE_ENV !== 'production',
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware().concat(sagaMiddleware, logger),
   // configureStore의 middleware로 logger를 추가해주면 상태가 변경될 때마다 콘솔에 상태를 출력해준다.
